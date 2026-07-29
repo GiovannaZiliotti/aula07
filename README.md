@@ -50,4 +50,5 @@ Criar uma aplicação simples em React para exibir notícias em formato de cards
 
 
 
-22222222222222222222222222222222
+
+
