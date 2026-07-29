@@ -1,0 +1,388 @@
+/* ==========================================================================
+   1. VARIÁVEIS E CONFIGURAÇÕES GERAIS (Padrão para qualquer tela)
+   ========================================================================== */
+:root {
+  --verde-pastel: #e0f2fe;       /* Azul claro pastel */
+  --verde-escuro: #0c4a6e;       /* Azul petróleo para cabeçalho e títulos */
+  --laranja-pastel: #fef9c3;     /* Amarelo claro suave para o Hero */
+  --laranja-escuro: #d97706;     /* Amarelo/Laranja queimado para links */
+  --texto-cor: #0f172a;
+  --branco: #ffffff;
+  --cinza-claro: #f8fafc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  color: var(--texto-cor);
+  line-height: 1.6;
+  background-color: var(--cinza-claro);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================================
+   2. ESTILOS BASE (Focados em Mobile/Telas Menores)
+   ========================================================================== */
+
+/* HEADER & MENU (Mobile) */
+.cabecalho {
+  background-color: var(--verde-pastel);
+  border-bottom: 3px solid var(--verde-escuro);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.cabecalho-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--verde-escuro);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-navegacao ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+.menu-navegacao a {
+  font-weight: 600;
+  color: var(--verde-escuro);
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+/* HERO (Mobile) */
+.hero {
+  background-color: var(--laranja-pastel);
+  padding: 2.5rem 1rem;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.hero-conteudo h1 {
+  font-size: 2rem;
+  color: var(--verde-escuro);
+  margin-bottom: 1rem;
+}
+
+.hero-conteudo p {
+  font-size: 1rem;
+}
+
+.hero-imagem {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-imagem img {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+/* SOBRE (Mobile) */
+.sobre {
+  padding: 3rem 1rem;
+  background-color: var(--branco);
+  text-align: center;
+}
+
+.sobre-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sobre h2 {
+  font-size: 1.8rem;
+  color: var(--verde-escuro);
+  margin-bottom: 1rem;
+}
+
+/* NOTÍCIAS & CARDS (Mobile) */
+.noticias {
+  padding: 3rem 1rem;
+}
+
+.noticias h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--verde-escuro);
+  margin-bottom: 2rem;
+}
+
+.cards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.card-noticia {
+  background-color: var(--branco);
+  width: 100%;
+  max-width: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-noticia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-imagem-wrapper {
+  overflow: hidden;
+  height: 200px;
+}
+
+.card-imagem-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-noticia:hover .card-imagem-wrapper img {
+  transform: scale(1.1);
+}
+
+.card-corpo {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-meta {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-titulo {
+  font-size: 1.1rem;
+  color: var(--texto-cor);
+  margin-bottom: 1rem;
+}
+
+.card-link {
+  margin-top: auto;
+  align-self: flex-start;
+  color: var(--laranja-escuro);
+  font-weight: bold;
+}
+
+/* FOOTER & CONTATO (Mobile) */
+.rodape {
+  background-color: var(--verde-escuro);
+  color: var(--branco);
+  padding: 2.5rem 1rem 1.5rem;
+}
+
+.rodape-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 2rem;
+}
+
+.rodape-contato h3,
+.rodape-social h3 {
+  color: var(--laranja-pastel);
+  margin-bottom: 0.8rem;
+}
+
+.rodape-social ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.rodape-creditos {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+/* ==========================================================================
+   3. MEDIA QUERY (Para telas maiores: Tablets e Desktops)
+   ========================================================================== */
+@media (min-width: 768px) {
+  /* Ajustes do Header */
+  .cabecalho-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .menu-navegacao a {
+    font-size: 1rem;
+  }
+
+  /* Ajustes do Hero */
+  .hero {
+    padding: 4rem 2rem;
+  }
+
+  .hero-container {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+
+  .hero-conteudo {
+    flex: 1.2;
+  }
+
+  .hero-conteudo h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-conteudo p {
+    font-size: 1.2rem;
+  }
+
+  .hero-imagem {
+    flex: 0.8;
+  }
+
+  /* Ajustes do Sobre */
+  .sobre {
+    padding: 4rem 2rem;
+  }
+
+  /* Ajustes da Seção de Notícias */
+  .noticias {
+    padding: 4rem 2rem;
+  }
+
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card-noticia {
+    flex: 1 1 calc(33.333% - 1.5rem);
+    max-width: 380px;
+  }
+
+  /* Ajustes do Rodapé */
+  .rodape-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+/* SEÇÃO DE RECURSOS / BENEFÍCIOS */
+.recursos {
+  padding: 3rem 1rem;
+  background-color: var(--cinza-claro);
+  text-align: center;
+}
+
+.recursos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recursos h2 {
+  font-size: 1.8rem;
+  color: var(--verde-escuro);
+  margin-bottom: 2rem;
+}
+
+.recursos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.recurso-card {
+  background-color: var(--branco);
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  max-width: 360px;
+  width: 100%;
+}
+
+.recurso-icone {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.recurso-card h3 {
+  color: var(--verde-escuro);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.recurso-card p {
+  font-size: 0.95rem;
+  color: var(--texto-cor);
+}
+
+/* Ajuste para Desktop (lado a lado) */
+@media (min-width: 768px) {
+  .recursos-grid {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
