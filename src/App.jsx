@@ -25,7 +25,7 @@ function App() {
         <section className="hero">
           <div className="hero-container">
             <div className="hero-conteudo">
-              <h1>O Futuro do Varejo Alimentar Começa Aqui</h1>
+              <h1>O Futuro do Varejo Alimentar</h1>
               <p>Tudo sobre supermercados, atacarejos, consumo e inovação na indústria de alimentos.</p>
             </div>
             <aside className="hero-imagem">
