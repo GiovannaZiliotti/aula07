@@ -47,6 +47,7 @@ Criar uma aplicação simples em React para exibir notícias em formato de cards
 - [ ] O código foi salvo e organizado.
 - [ ] O repositório possui um nome e descrição adequados no GitHub.
 
+Readme atualizado
 
 
 
