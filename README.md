@@ -1,17 +1,53 @@
-# React + Vite
+# Meu Primeiro React
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Projeto desenvolvido para praticar os conceitos básicos de React utilizando Vite.
 
-Currently, two official plugins are available:
+## Objetivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Criar uma aplicação simples em React para exibir notícias em formato de cards, praticando componentes, organização de arquivos e renderização de listas.
 
-## React Compiler
+## Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS
 
-## Expanding the Oxlint configuration
+## Como rodar o projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-"# aula07" 
+1. Clone este repositório:
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   ```
+
+2. Acesse a pasta do projeto:
+   ```bash
+   cd meu-primeiro-react
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+5. Abra o navegador no endereço informado pelo Vite (normalmente `http://localhost:5173`).
+
+---
+
+## ✅ Checklist antes de publicar
+
+- [ ] O projeto executa sem erros (`npm run dev`).
+- [ ] O README está atualizado.
+- [ ] O repositório **não** contém a pasta `node_modules`.
+- [ ] O código foi salvo e organizado.
+- [ ] O repositório possui um nome e descrição adequados no GitHub.
+
+
+
+
+22222222222222222222222222222222
